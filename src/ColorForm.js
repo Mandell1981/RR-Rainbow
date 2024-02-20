@@ -10,7 +10,7 @@ function ColorForm (props) {
     }
     return (
         <div>
-            <form onsubmit={handlesubmit}>
+            <form onsubmit={handleSubmit}>
                 <input type="text"
                 onChange={(e) => setInput(e.target.value)} />
                 <button type="submit">Submit!</button>
