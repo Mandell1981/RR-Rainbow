@@ -1,6 +1,7 @@
 import logo from './logo.svg';
-import React, { useState } from 'react'
-import ColorBlock from './ColorBlock'
+import React, { useState } from 'react';
+import ColorBlock from './ColorBlock';
+import ColorForm from './ColorForm';
 import './App.css';
 
 function App() {
@@ -20,10 +21,10 @@ function App() {
     }
   return (
     <div className="App">
-      {colors.map((color, i) => (
-        <ColorBlock key={i} color={color} />
-      ))}
-
+      {colorMap}
+          
+            <ColorForm addColor={addColor} />
+    
     </div>
   );
 }
